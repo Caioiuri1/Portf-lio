@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Signika Negative", serif;
+    font-optical-sizing: auto;
+    font-weight: 599;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F0F8FF;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, .212);
+    
+    
+}
+
+.form-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ADD8E6;
+    padding: 1rem;
+    
+}
+
+.form-img img {
+    width: 31rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+
+}
+
+.login-button button {
+    border: none;
+    background-color: #0000FF;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #6495ED;
+}
+
+.login-button a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #0000FF;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-grup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover{
+    background-color:#F0F8FF ;
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid #0000FF;
+}
+
+.input-box label,
+.gender-title h6{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: 000000c0;
+}
+
+.input-box input::placeholder{
+    color: 000000be;
+}
+
+.gender-grup{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding:0 0.5rem;
+}
+
+.gender-input input{
+    margin-right: 0.35rem;
+}
+
+.gender-input label{
+    font-size: 0.81rem;
+    font-weight: 500;
+    color: black;
+}
+
+.gender-button button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #0000FF;
+    padding:0.62rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gender-button button:hover{
+    background-color: #6495ED;
+}
+
+.gender-button a{
+    text-decoration: none;
+    color: #F0F8FF;
+    font-weight: 500;
+}
