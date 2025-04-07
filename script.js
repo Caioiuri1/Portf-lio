@@ -17,19 +17,25 @@ iniciofechar.addEventListener('click', () => {
 })
 
 function enviarwhats(event) {
-    event.preventDefault()
+    event.preventDefault();
 
     const nome = document.getElementById('firstname').value;
     const email = document.getElementById('email').value;
     const tel = document.getElementById('number').value;
     const mensagem = document.getElementById('text').value;
-    const telefone = '558791174227'
+    const telefone = '558791174227';
 
-    const texto = `Ola! Me chamo ${nome}, ${mensagem}. Esse é o meu email ${email} e o meu número de telefone ${tel}`
-    const msgFormatada = encodeURIComponent(texto)
+    if (!nome || !email || !tel || !mensagem) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+    }
 
-    const url = `https://whatsa.me/${telefone}/?t=${msgFormatada}`
+    const texto = `Olá! Me chamo ${nome}, ${mensagem}. Esse é o meu email: ${email} e o meu número de telefone: ${tel}`;
+    const msgFormatada = encodeURIComponent(texto);
 
-    window.open(url, '_blank')
+    const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+    window.open(url, '_blank');
 }
+
 
