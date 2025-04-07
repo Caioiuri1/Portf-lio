@@ -25,11 +25,6 @@ function enviarwhats(event) {
     const mensagem = document.getElementById('text').value;
     const telefone = '558791174227';
 
-    if (!nome || !email || !tel || !mensagem) {
-        alert("Por favor, preencha todos os campos.");
-        return;
-    }
-
     const texto = `Olá! Me chamo ${nome}, ${mensagem}. Esse é o meu email: ${email} e o meu número de telefone: ${tel}`;
     const msgFormatada = encodeURIComponent(texto);
 
