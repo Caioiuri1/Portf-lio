@@ -28,7 +28,7 @@ function enviarwhats(event) {
     const texto = `Ola! Me chamo ${nome}, ${mensagem}. Esse é o meu email ${email} e o meu número de telefone ${tel}`
     const msgFormatada = encodeURIComponent(texto)
 
-    const url = `https://wa.me/${telefone}/?t=${msgFormatada}`
+    const url = `https://wame.me/${telefone}/?t=${msgFormatada}`
 
     window.open(url, '_blank')
 }
